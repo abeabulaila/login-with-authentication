@@ -12,4 +12,5 @@ const userSchema = new mongoose.Schema({
     }
 })
 
+//Checking to see if user exists, otherwise create new one
 module.exports = mongoose.models.User || mongoose.model('User',userSchema)
